@@ -1,2 +1,2 @@
 # dqn
-pytorch implementation of dqn
+This is pytorch implementation of dqn
