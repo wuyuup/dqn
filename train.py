@@ -5,7 +5,7 @@ from agent import DQNAgent, DoubleDQNAgent
 def main():
     args = Config()
     torch.manual_seed(args.seed)
-    agent = DQNAgent(args)
+    agent = DoubleDQNAgent(args)
     # training
     agent.train()
     print('complete!')

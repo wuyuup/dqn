@@ -20,7 +20,7 @@ class DQNAgent(object):
     def __select_action(self):
         p = random.random()
         if p > self.eps:
-            return self.target_net(self.state).max(1)[1].numpy()[0]
+            return self.q_net(self.state).max(1)[1].numpy()[0]
         else:
             return self.env.action_space.sample()
 

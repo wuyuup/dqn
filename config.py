@@ -11,7 +11,7 @@ class Config(object):
         self.EPS_END = 0.1 # final exploration
         self.EPS_DECAY = 200 # decay
         self.TARGET_UPDATE = 100 # target network update freq
-        self.num_episodes = 500
+        self.num_episodes = 1000
         self.LR = 0.001 # adam lr
         self.initial_exploration = 1000
         self.env = gym.make('CartPole-v0').unwrapped
