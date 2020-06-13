@@ -42,7 +42,7 @@ class DQN(nn.Module):
 
         for m in self.modules():
             if isinstance(m, nn.Linear):
-                nn.init.xavier_uniform(m.weight)
+                nn.init.xavier_uniform_(m.weight)
 
     def forward(self, x):
         x = F.relu(self.f1(x))
